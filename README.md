@@ -14,6 +14,16 @@ A free, interactive study aid for the FAA Part 107 Remote Pilot knowledge test (
 - **Progress that persists** — sessions, scores, bookmarks, and performance history are stored locally in your browser (localStorage), so you can stop and resume on the same device.
 - **Reference material** — sectional-chart and Chart Supplement visual guides, an airspace quick reference, key Part 107 facts, test-day strategies, and links to official FAA resources.
 
+## Screenshots
+
+![Study guide start screen](docs/screenshots/part107-app.jpg)
+
+*The app start screen — the three study modes, with the accuracy note in full.*
+
+![Landing page](docs/screenshots/part107-landing.jpg)
+
+*The landing page — launch button, coverage stats, and the three ways to study.*
+
 ## Question bank
 
 | Category | Questions |
@@ -65,4 +75,4 @@ Download `part107-study-guide.html` and open it in a browser. That's it. Optiona
 
 ## Status
 
-Maintained as a free resource alongside [Second Sight Solutions](https://github.com/S3OPS/secondsightsolutions), a veteran-owned drone services project in Central Texas.
+Maintained as a free resource alongside [Second Sight Solutions](https://s3ops.github.io/secondsightsolutions/), a veteran-owned drone services project in Central Texas.

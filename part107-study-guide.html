@@ -2052,7 +2052,12 @@
 
         <div id="startScreen" class="start-screen">
             <h2>Welcome to Your Interactive Study Guide!</h2>
-            <p>This comprehensive guide covers everything you need to know to pass the Part 107 FAA Remote Pilot exam. Answer multiple choice questions, get instant feedback, and track your progress.</p>
+            <p>This independent study aid contains 192 practice questions with explanations, covering the knowledge areas listed in 14 CFR §§107.73 and 107.74. Answer multiple choice questions, get instant feedback, and track your progress.</p>
+            <div style="margin: 20px 0; padding: 15px 20px; background: #fff8e1; border: 1px solid #ffe082; border-left: 5px solid #ffb300; border-radius: 8px; text-align: left;">
+                <strong>⚠️ Accuracy note:</strong> This is an independent study aid — it is not published by, affiliated with, or endorsed by the FAA, and it does not guarantee a passing score. The question bank was reviewed against 14 CFR Part 107 and FAA guidance in November 2026. Regulations change: always confirm current requirements with the FAA's
+                <a href="https://www.faa.gov/uas/commercial_operators/become_a_drone_pilot" target="_blank" rel="noopener">Become a Drone Pilot</a> page and the current text of
+                <a href="https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-107" target="_blank" rel="noopener">14 CFR Part 107</a> before relying on any answer operationally.
+            </div>
             
             <!-- Your Progress Summary -->
             <div id="progressSummary" style="display: none; margin: 20px 0; padding: 20px; background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%); border-radius: 10px; border: 2px solid #4CAF50;">
@@ -2571,7 +2576,7 @@
 
                 <!-- Question Distribution -->
                 <div class="airspace-diagram" style="margin-top: 30px;">
-                    <h3 style="color: #d32f2f;">📊 Actual Exam Question Distribution</h3>
+                    <h3 style="color: #d32f2f;">📊 Approximate Topic Emphasis on the Exam</h3>
                     <p style="color: #666; margin-bottom: 20px;">Understanding how questions are distributed helps you focus your study efforts. The FAA exam emphasizes certain topics more than others:</p>
                     <div style="background: white; padding: 25px; border-radius: 10px; border: 2px solid #d32f2f;">
                         <table style="width: 100%; border-collapse: collapse;">
@@ -3369,15 +3374,15 @@
             },
             {
                 category: "Regulations",
-                question: "How often must a Part 107 Remote Pilot Certificate be renewed?",
+                question: "How often must a remote pilot complete recurrent training to keep exercising Part 107 privileges?",
                 options: [
-                    "Every year",
-                    "Every 2 years",
-                    "Every 3 years",
-                    "Never, it's valid indefinitely"
+                    "Every 12 calendar months",
+                    "Every 24 calendar months",
+                    "Every 36 calendar months",
+                    "Never — no recurrent training is required"
                 ],
                 correct: 1,
-                explanation: "A Part 107 Remote Pilot Certificate must be renewed every 24 months (2 years). Renewal requires completing an online recurrent training course or retaking the Part 107 knowledge test."
+                explanation: "The Remote Pilot Certificate itself does not expire. Under §107.65, however, a remote pilot may not exercise its privileges unless, within the previous 24 calendar months, they have passed an initial aeronautical knowledge test or completed FAA recurrent training. The FAA recurrent course (ALC-677) is available online at no cost through FAASafety.gov."
             },
             {
                 category: "Regulations",
@@ -3393,27 +3398,27 @@
             },
             {
                 category: "Regulations",
-                question: "When must a drone be registered with the FAA?",
+                question: "Under Part 107, which unmanned aircraft must be registered with the FAA?",
                 options: [
-                    "All drones must be registered",
-                    "Only drones weighing more than 0.55 pounds (250 grams)",
-                    "Only drones weighing more than 5 pounds",
-                    "Registration is optional"
+                    "All of them, regardless of weight",
+                    "Only aircraft weighing more than 0.55 pounds (250 grams)",
+                    "Only aircraft weighing more than 5 pounds",
+                    "Registration is optional for Part 107 operations"
                 ],
-                correct: 1,
-                explanation: "Drones weighing more than 0.55 pounds (250 grams) and less than 55 pounds must be registered with the FAA. The registration number must be displayed on the exterior of the aircraft."
+                correct: 0,
+                explanation: "Federal law requires every unmanned aircraft operated under Part 107 to be registered, regardless of weight, and the registration number must be displayed on the exterior of the aircraft. The 0.55-pound (250-gram) threshold belongs to the exception for limited recreational operations — it does not apply to Part 107."
             },
             {
                 category: "Regulations",
                 question: "Can you fly a drone at night under Part 107?",
                 options: [
                     "No, night operations are prohibited",
-                    "Yes, with anti-collision lighting visible for 3 statute miles",
+                    "Yes — if the pilot's knowledge test or training covers night operations and the aircraft has anti-collision lighting visible for at least 3 statute miles",
                     "Only with a waiver",
                     "Yes, but only in Class G airspace"
                 ],
                 correct: 1,
-                explanation: "As of 2021, night operations are allowed under Part 107 if the remote pilot has completed night training and the drone has anti-collision lighting visible for at least 3 statute miles. Night operations require additional recurrent training."
+                explanation: "Since April 2021, §107.29 has allowed night operations without a waiver when two conditions are met: (1) the remote pilot in command has completed an initial knowledge test or training under §107.65 after April 6, 2021, which covers night operations; and (2) the aircraft has lighted anti-collision lighting visible for at least 3 statute miles with a flash rate sufficient to avoid a collision."
             },
 
             // Operations & Flight Planning
@@ -4720,15 +4725,15 @@
             // Additional Regulations Questions
             {
                 category: "Regulations",
-                question: "What is the maximum weight for a Part 107 drone?",
+                question: "How must a registered small unmanned aircraft be marked?",
                 options: [
-                    "25 pounds",
-                    "55 pounds including payload",
-                    "100 pounds",
-                    "No weight limit"
+                    "With the pilot's name inside the battery compartment",
+                    "With its registration number on the exterior of the aircraft",
+                    "With an FAA logo on each propeller",
+                    "No marking is required below 55 pounds"
                 ],
                 correct: 1,
-                explanation: "Under Part 107, the maximum weight for a small unmanned aircraft is 55 pounds (25 kg) including everything on board (payload, batteries, etc.). Aircraft exceeding this weight require different certification and operating rules."
+                explanation: "Under 14 CFR Part 48, the aircraft's unique registration number must be displayed on an exterior surface of the aircraft so that it is legible on close inspection. Marking is required for registered aircraft regardless of size. (Separately, Part 107 aircraft must weigh less than 55 pounds at takeoff, including everything on board or attached.)"
             },
             {
                 category: "Regulations",
@@ -4764,7 +4769,7 @@
                     "It never expires"
                 ],
                 correct: 1,
-                explanation: "The Part 107 knowledge test results are valid for 24 months. Within this period, you must complete the application process to receive your Remote Pilot Certificate, which is then valid for 24 months from issuance."
+                explanation: "A passing knowledge test report is used to apply for the Remote Pilot Certificate, and the certification application must be completed while the report is current — 24 calendar months. Once the certificate is issued, it does not itself expire; instead, §107.65 requires the pilot to complete recurrent training within each 24-calendar-month period to keep exercising its privileges."
             },
 
             // Additional Operations Questions
@@ -4849,12 +4854,12 @@
                 question: "When can you legally operate a drone at night under Part 107?",
                 options: [
                     "Never - night operations are prohibited",
-                    "Anytime with proper anti-collision lighting",
+                    "When the pilot has completed a post-April 6, 2021 knowledge test or training covering night operations and the aircraft carries anti-collision lighting visible for at least 3 statute miles",
                     "Only with a waiver",
                     "Only in Class G airspace"
                 ],
                 correct: 1,
-                explanation: "As of April 2021, Part 107 allows night operations if the drone has proper anti-collision lighting visible for 3 statute miles and the remote pilot has completed updated night operations training or passed the recurrent knowledge test after April 6, 2021."
+                explanation: "Night operations no longer require a waiver, but they are not unconditional. Under §107.29(a), the remote pilot in command must have completed an initial knowledge test or training under §107.65 after April 6, 2021, and the aircraft must have lighted anti-collision lighting visible for at least 3 statute miles. There is no longer a recurrent knowledge test — currency is maintained through FAA online recurrent training."
             },
             {
                 category: "Night Operations",
@@ -4908,7 +4913,7 @@
             // Operations Over People (NEW SECTION)
             {
                 category: "Operations Over People",
-                question: "Under Part 107, which category of small unmanned aircraft can fly over people without additional requirements?",
+                question: "Which operations-over-people category has the least stringent aircraft requirements?",
                 options: [
                     "Category 1",
                     "Category 2",
@@ -4916,7 +4921,7 @@
                     "All categories can fly over people freely"
                 ],
                 correct: 0,
-                explanation: "Category 1 aircraft (weighing 0.55 pounds or less including payload) can operate over people without additional requirements. They pose minimal injury risk due to their light weight."
+                explanation: "Category 1 (§107.110) requires no declaration of compliance and no airworthiness certificate. The aircraft must weigh 0.55 pounds or less on takeoff and throughout the operation — including everything on board or attached — and must not contain exposed rotating parts that would lacerate human skin. Sustained flight over open-air assemblies is permitted only if the aircraft meets the Remote ID requirements of §89.110 or §89.115(a)."
             },
             {
                 category: "Operations Over People",
@@ -4940,7 +4945,7 @@
                     "Remote ID only"
                 ],
                 correct: 1,
-                explanation: "Category 2 aircraft must have a Declaration of Compliance on file with the FAA demonstrating that the aircraft will not cause injury exceeding 11 foot-pounds of kinetic energy threshold upon impact, has no exposed rotating parts causing lacerations, and passes other safety requirements."
+                explanation: "The aircraft must be eligible for Category 2 under §107.120: on impact it must not cause injury equivalent to or greater than the severity of 11 foot-pounds of kinetic energy, it must not contain exposed rotating parts that would lacerate human skin, and it must not contain any safety defects. It must also be listed on an FAA-accepted declaration of compliance (§107.160) and labeled as eligible for Category 2 operations."
             },
             {
                 category: "Operations Over People",
@@ -4948,11 +4953,11 @@
                 options: [
                     "Yes, always without restrictions",
                     "No, never allowed",
-                    "Yes, under certain conditions including not operating over open-air assemblies",
+                    "Yes, if the operation complies with Category 1, 2, 3, or 4 and the conditions of §107.145 are met",
                     "Only with a waiver"
                 ],
                 correct: 2,
-                explanation: "Operations over moving vehicles are allowed for Category 1, 2, 3, or 4 aircraft if not operated over open-air assemblies of human beings, and participants are on notice that a drone may fly over them. Operations must not involve sustained flight over moving vehicles."
+                explanation: "Under §107.145, the operation must comply with the applicable category rules (§107.110, §107.115, §107.125, or §107.140). For Category 1, 2, or 3, the aircraft must either remain within or over a closed- or restricted-access site — with the people inside the vehicles on notice that a small unmanned aircraft may fly over them — or not maintain sustained flight over moving vehicles. Category 4 aircraft must meet their airworthiness certificate and flight manual limitations."
             },
             {
                 category: "Operations Over People",
@@ -4988,7 +4993,7 @@
                     "Only operations over people require Remote ID"
                 ],
                 correct: 2,
-                explanation: "All Category 2 and Category 3 small unmanned aircraft must be equipped with Remote ID broadcast capability. Category 1 aircraft may rely on standard Remote ID rules (built-in or broadcast module)."
+                explanation: "Aircraft operated under Part 107 must be registered, and registered aircraft must comply with the Remote ID rule (14 CFR Part 89) — broadcasting through standard Remote ID or a broadcast module — unless an exception applies, such as operating within an FAA-recognized identification area (FRIA). Category 2 and 3 aircraft therefore operate with Remote ID, and sustained flight over open-air assemblies specifically requires meeting §89.110 or §89.115(a)."
             },
 
             // Additional Loading & Performance Questions
@@ -5176,7 +5181,7 @@
                     "Not required under Part 107"
                 ],
                 correct: 1,
-                explanation: "Remote ID became mandatory for Part 107 operations on September 16, 2023. It broadcasts identification and location information, allowing the FAA and law enforcement to identify drones in flight. Limited exceptions exist for operations in FAA-recognized identification areas (FRIAs)."
+                explanation: "The Remote ID operating rule (14 CFR Part 89) took effect on September 16, 2023, and the FAA exercised enforcement discretion until March 16, 2024. Because every aircraft operated under Part 107 must be registered, Part 107 aircraft must broadcast Remote ID unless an exception applies — principally operations within an FAA-recognized identification area (FRIA) or operations the FAA has otherwise authorized."
             },
             {
                 category: "Regulations",
@@ -5212,7 +5217,7 @@
                     "Video feed from the drone"
                 ],
                 correct: 1,
-                explanation: "Remote ID broadcasts the drone's identification number, location, altitude, velocity, time mark, and emergency status. Standard Remote ID also broadcasts the control station location. This information is available to the FAA and law enforcement."
+                explanation: "A standard Remote ID aircraft broadcasts a message set containing the aircraft's unique identifier; the aircraft's latitude, longitude, and altitude; its velocity; the latitude, longitude, and altitude of the control station; a time mark; and an emergency status indicator. An aircraft using a Remote ID broadcast module broadcasts the takeoff location instead of the control-station location. The broadcast does not include the pilot's name or address."
             },
             {
                 category: "Regulations",
@@ -5231,12 +5236,12 @@
                 question: "Can you operate multiple drones simultaneously under Part 107?",
                 options: [
                     "Yes, as many as you want",
-                    "No, never allowed",
-                    "Yes, but only one drone at a time without a waiver",
+                    "No, never under any circumstances",
+                    "No — not unless the FAA grants a waiver; one person may operate only one aircraft at a time",
                     "Only with multiple remote pilots"
                 ],
                 correct: 2,
-                explanation: "Part 107 normally requires one remote pilot per aircraft. Operating multiple drones simultaneously requires either multiple remote pilots or a waiver from the FAA. Some waivers allow single-pilot multi-drone operations under specific conditions."
+                explanation: "Section 107.35 prohibits a person from manipulating the flight controls, or acting as remote pilot in command or visual observer, for more than one unmanned aircraft at the same time. Several aircraft can be airborne together when each has its own remote pilot, and the FAA may waive §107.35 for a single-operator multi-aircraft operation."
             },
 
             // Additional comprehensive coverage questions
@@ -5278,15 +5283,15 @@
             },
             {
                 category: "Regulations",
-                question: "How often must you renew your Part 107 Remote Pilot Certificate?",
+                question: "Does a Remote Pilot Certificate expire?",
                 options: [
-                    "Every 12 months",
-                    "Every 24 months",
-                    "Every 36 months",
-                    "It never expires"
+                    "Yes — after 12 months",
+                    "Yes — after 24 months",
+                    "Yes — after 36 months",
+                    "No — the certificate does not expire, but the pilot's knowledge recency does"
                 ],
-                correct: 1,
-                explanation: "Part 107 Remote Pilot Certificates are valid for 24 months (2 years). Renewal requires passing the recurrent knowledge test or completing approved recurrent training through the FAA Safety Team (FAASTeam)."
+                correct: 3,
+                explanation: "The certificate remains valid unless it is surrendered, suspended, or revoked. What lapses is aeronautical knowledge recency: under §107.65, a pilot who has not passed an initial knowledge test or completed recurrent training within the previous 24 calendar months may not act as remote pilot in command until that training is completed."
             },
             {
                 category: "Operations",
@@ -5586,15 +5591,15 @@
             // Additional Operations Over People Questions
             {
                 category: "Operations Over People",
-                question: "Under Part 107, which category of UAS is permitted to conduct sustained flight over moving vehicles?",
+                question: "For Category 1, 2, or 3 aircraft, when is sustained flight over moving vehicles permitted?",
                 options: [
-                    "Only Category 4 aircraft with FAA approval",
-                    "Categories 1, 2, 3, and 4 may fly over moving vehicles if not over open-air assemblies and notification is given",
-                    "No category is permitted to fly over moving vehicles",
-                    "Only Category 1 aircraft under 0.55 lbs"
+                    "Only Category 4 aircraft may ever fly over moving vehicles",
+                    "Only when the operation remains within or over a closed- or restricted-access site and the people inside the vehicles are on notice that a small unmanned aircraft may fly over them",
+                    "Sustained flight over moving vehicles is never permitted",
+                    "Whenever the vehicles are moving slowly"
                 ],
                 correct: 1,
-                explanation: "All four categories (1–4) may operate over moving vehicles, provided the operations are not over an open-air assembly of human beings. Additionally, people on the ground must have been given prior notice that a UAS may fly over them. Sustained flight over moving vehicles in active roadways requires compliance with these conditions."
+                explanation: "Section 107.145(b) gives Category 1–3 operations two paths: remain within or over a closed- or restricted-access site with the vehicle occupants on notice, or do not maintain sustained flight over moving vehicles. Category 4 operations follow §107.145(c) instead — an airworthiness certificate and compliance with the approved flight manual limitations."
             },
             {
                 category: "Operations Over People",
@@ -5672,13 +5677,13 @@
                 category: "Night Operations",
                 question: "Under Part 107, what lighting must be visible on a small UAS during night operations?",
                 options: [
-                    "Anti-collision lighting visible for at least 3 statute miles for 360 degrees",
+                    "Anti-collision lighting visible for at least 3 statute miles, with a flash rate sufficient to avoid a collision",
                     "Standard aircraft navigation lights (red, green, white)",
                     "Any lighting the remote PIC deems sufficient",
                     "No special lighting is required at night"
                 ],
                 correct: 0,
-                explanation: "For night operations under Part 107, the small UAS must have anti-collision lighting visible for at least 3 statute miles. This anti-collision light must be visible for 360 degrees and must have a flash rate sufficient to avoid a collision. The remote PIC may reduce lighting intensity if it would impair the safety of the flight."
+                explanation: "Section 107.29 requires lighted anti-collision lighting visible for at least 3 statute miles with a flash rate sufficient to avoid a collision. The rule does not prescribe a color. The remote pilot in command may reduce — but not extinguish — the intensity of the lighting if he or she determines that, because of operating conditions, doing so would be in the interest of safety."
             },
             {
                 category: "Night Operations",
@@ -5686,11 +5691,11 @@
                 options: [
                     "An additional night flight rating on the Part 107 certificate",
                     "Night-specific recurrent training every 6 months",
-                    "No additional certification—all Part 107 holders may fly at night with required lighting",
+                    "An initial knowledge test or recurrent training completed after April 6, 2021 that covers night operations — no separate night rating or waiver",
                     "A specific waiver from the FAA for each night flight"
                 ],
                 correct: 2,
-                explanation: "The 2021 FAA rule change (effective April 21, 2021) allows Part 107 remote pilots to fly at night without a waiver, as long as the UAS has anti-collision lighting visible for 3 statute miles. No additional night rating or waiver is needed. Prior to this rule change, a waiver was required."
+                explanation: "Under §107.29(a)(1), the remote pilot in command must have completed an initial knowledge test or training under §107.65 after April 6, 2021; the updated test and training cover night operations. No separate night rating or per-flight waiver is required — but a pilot whose test or training predates that change must complete the updated recurrent training before flying at night."
             },
             {
                 category: "Night Operations",
@@ -5754,15 +5759,15 @@
             },
             {
                 category: "Regulations",
-                question: "Under Part 107, what is the minimum age requirement to obtain a Remote Pilot Certificate?",
+                question: "Under §107.61, which of the following is an eligibility requirement for a Remote Pilot Certificate?",
                 options: [
-                    "14 years old",
-                    "16 years old",
-                    "18 years old",
-                    "21 years old"
+                    "Holding a valid state driver's license",
+                    "Being able to read, speak, write, and understand the English language",
+                    "Having uncorrected 20/20 vision",
+                    "Being a United States citizen"
                 ],
                 correct: 1,
-                explanation: "Under 14 CFR Part 107.61, an applicant for a Remote Pilot Certificate must be at least 16 years old. This is one of the basic eligibility requirements along with being able to read, speak, write, and understand English, and being in physical and mental condition to safely operate a small UAS."
+                explanation: "Section 107.61 requires an applicant to be at least 16 years old; to be able to read, speak, write, and understand the English language (the FAA may place limitations on the certificate if a medical condition prevents meeting part of that requirement); to not know or have reason to know of a physical or mental condition that would interfere with the safe operation of a small UAS; and to demonstrate aeronautical knowledge through the initial knowledge test or the Part 61 pilot training path."
             },
             {
                 category: "Regulations",
@@ -5778,27 +5783,27 @@
             },
             {
                 category: "Regulations",
-                question: "What does Remote ID require a UAS to broadcast?",
+                question: "Which operation may be conducted without the aircraft broadcasting Remote ID?",
                 options: [
-                    "Only the pilot's name and certificate number",
-                    "The UAS ID, takeoff location, current location and altitude, velocity, and emergency status",
-                    "GPS coordinates of the mission endpoint only",
-                    "Radio frequencies being used during the operation"
+                    "Any Part 107 operation with an aircraft weighing less than 0.55 pounds",
+                    "An operation conducted within an FAA-recognized identification area (FRIA)",
+                    "Any operation conducted at night",
+                    "Any Category 1 operation over people"
                 ],
                 correct: 1,
-                explanation: "Under FAA Remote ID rules (effective September 16, 2023), standard Remote ID UAS must broadcast the UAS ID, takeoff location (latitude, longitude, altitude), current position (latitude, longitude, altitude), velocity, and an emergency status indicator. This information allows authorities and the public to identify UAS operating in the airspace."
+                explanation: "Under §89.120, an unmanned aircraft without Remote ID may be operated only within the visual line of sight of the remote pilot and within the boundaries of an FAA-recognized identification area (FRIA), unless the FAA authorizes otherwise. Weight alone does not exempt a Part 107 aircraft: every Part 107 aircraft must be registered, and registered aircraft are subject to Remote ID."
             },
             {
                 category: "Regulations",
-                question: "Under Part 107, what is required before flying a small UAS over a moving vehicle?",
+                question: "Under §107.145, which condition must always be met before operating over a human being inside a moving vehicle?",
                 options: [
-                    "No special requirement—moving vehicles are allowed under standard Part 107",
-                    "The vehicle must be part of a controlled or restricted-access site",
-                    "A specific waiver must be obtained from the FAA",
+                    "No special requirement — standard Part 107 rules are enough",
+                    "The operation must comply with the requirements for Category 1, 2, 3, or 4 operations, as applicable",
+                    "A waiver is always required",
                     "Verbal permission from the vehicle operator is sufficient"
                 ],
                 correct: 1,
-                explanation: "Under Part 107.145, operations over moving vehicles are only permitted over controlled or restricted-access sites where people within the moving vehicles are not members of the general public (e.g., a closed film set or private testing facility). Operations over moving vehicles with members of the general public require a waiver under Part 107.200."
+                explanation: "Section 107.145(a) conditions every operation over a person in a moving vehicle on compliance with the applicable category section — §107.110, §107.115, §107.125, or §107.140. Category 1–3 operations must additionally satisfy §107.145(b) — a closed- or restricted-access site with notice, or no sustained flight over the vehicles — and Category 4 operations must satisfy §107.145(c)."
             },
 
             // Additional Weather Questions
@@ -5857,12 +5862,12 @@
                 question: "What does Part 107.51 establish regarding operating limitations?",
                 options: [
                     "The maximum takeoff weight limit of 55 pounds for small UAS",
-                    "Speed, altitude, visual line of sight, and daylight limitations",
+                    "Groundspeed, altitude, flight visibility, and distance from clouds",
                     "Registration and marking requirements for small UAS",
                     "The minimum pilot age and certificate requirements"
                 ],
                 correct: 1,
-                explanation: "Part 107.51 establishes operating limitations including: maximum groundspeed of 87 knots (100 mph), maximum altitude of 400 feet AGL (or 400 feet above a structure), operations must remain within visual line of sight, and operations must occur during daylight or civil twilight with anti-collision lighting."
+                explanation: "Section 107.51 sets four operating limitations: a maximum groundspeed of 87 knots (100 mph); a maximum altitude of 400 feet AGL (or, within a 400-foot radius of a structure, up to 400 feet above the structure's immediate uppermost limit); minimum flight visibility of 3 statute miles as observed from the control station; and minimum distance from clouds of 500 feet below and 2,000 feet horizontally. Visual line of sight is required by §107.31, and night operations are governed by §107.29."
             },
             {
                 category: "Regulations",
@@ -5870,11 +5875,11 @@
                 options: [
                     "Flying in Class G airspace below 400 feet AGL during daylight",
                     "Flying at night with anti-collision lighting visible for 3 statute miles",
-                    "Flying over a moving vehicle on a public road without a restricted-access site",
+                    "Maintaining sustained flight over moving vehicles on a public road, outside a closed- or restricted-access site",
                     "Flying within visual line of sight with a visual observer"
                 ],
                 correct: 2,
-                explanation: "Flying a small UAS over moving vehicles on public roads where the public has access requires a waiver under Part 107.200 because Part 107.145 only permits operations over moving vehicles in controlled or restricted-access sites. Operations like flying at night with proper lighting, in Class G airspace, or with a visual observer are permitted under standard Part 107 rules."
+                explanation: "Sustained flight over moving vehicles outside a closed- or restricted-access site does not meet §107.145(b), so it may be conducted only under a waiver of that section issued under §107.200. Brief, non-sustained flight over a moving vehicle can be legal without a waiver when the aircraft complies with its category requirements. Night flight with compliant lighting and training, daylight flight in Class G below 400 feet, and flying with a visual observer are all permitted without a waiver."
             },
 
             // Additional Maintenance & Preflight Questions
